@@ -39,7 +39,7 @@ POSTGRES
 ============
 Created ENV file to store password
 
-development:
+```development:
   <<: *default
   adapter: postgresql
   database: postgres
@@ -53,36 +53,39 @@ production:
   database: postgres
   url: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV['DATABASE_POOL_SIZE'] || 10 %>
+  ```
 
 
 POSTMAN
 ============
 
 GET: rubyonrailsapi.herokuapp.com/events/
+
 POST: rubyonrailsapi.herokuapp.com/events/
 
-    Body, Raw, JSON
-Example:
-{
+    (Body, Raw, JSON)
+	Example:
+	{
 	"name": "right button",
 	"event_type": "click",
 	"at": "2020-07-12T00:00:03",
 	"button_color": "green"
-}
+	}
 
 UPDATE: rubyonrailsapi.herokuapp.com/events/:id
+
 DELETE:rubyonrailsapi.herokuapp.com/events/:id
 
-* ...
-CURL - 
-curl --location --request POST 'rubyonrailsapi.herokuapp.com/events/' \
---header 'Content-Type: application/json' \
---data-raw '{
-	"name": "right button",
-	"event_type": "click",
-	"at": "2020-07-12T00:00:03",
-	"button_color": "green"
-}'
+CURL
+============
+	curl --location --request POST 'rubyonrailsapi.herokuapp.com/events/' \
+	--header 'Content-Type: application/json' \
+	--data-raw '{
+		"name": "right button",
+		"event_type": "click",
+		"at": "2020-07-12T00:00:03",
+		"button_color": "green"
+	}'
 
 
 Server
