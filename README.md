@@ -12,7 +12,9 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Project Overview
+============
+https://care.slab.com/public/ruby-rails-api-crossover-project-kqigoekt 
 
 * Ruby version 2.7.2
 
