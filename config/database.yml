@@ -20,5 +20,6 @@ test:
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %> 
 
 production:
+  database: postgres
   url: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV['DATABASE_POOL_SIZE'] || 10 %>
