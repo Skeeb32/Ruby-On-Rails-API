@@ -1,8 +1,8 @@
-<h1 align="center">Gotta Catch 'Em All!</h1>
+<h1 align="center">Ruby On Rails</h1>
 <p align="center">
-  <img  alt="Pokedex" height="128px" width="128px" src="https://raw.githubusercontent.com/Mondal10/Pokedex/master/public/assets/logo-128.png">
+  <img  alt="Ruby On Rails API" height="128px" width="128px" src="https://miro.medium.com/max/700/1*6h1kck2QmGaC89ERN_W3UA.jpeg">
 </p>
-<h1 align="center"><a href="https://mondal10.github.io/Pokedex/#/page=0">Pokédex</a></h1>
+<h1 align="center"><a href="https://rubyonrailsapi.herokuapp.com/events">Deployed Project</a></h1>
 
 <h3 align="center">Ruby/Rails API Crossover Project</h3>
 
