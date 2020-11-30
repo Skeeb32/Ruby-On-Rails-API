@@ -1,6 +1,6 @@
 <h1 align="center">Ruby On Rails</h1>
 <p align="center">
-  <img  alt="Ruby On Rails API" height="500px" width="700px" src="https://miro.medium.com/max/700/1*6h1kck2QmGaC89ERN_W3UA.jpeg">
+  <img  alt="Ruby On Rails API" height="300px" width="600px" src="https://miro.medium.com/max/700/1*6h1kck2QmGaC89ERN_W3UA.jpeg">
 </p>
 <h1 align="center"><a href="https://rubyonrailsapi.herokuapp.com/events">Deployed Project</a></h1>
 
