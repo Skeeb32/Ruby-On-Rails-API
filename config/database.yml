@@ -7,6 +7,7 @@ default: &default
 
 development:
   <<: *default
+  adapter: postgresql
   database: postgres
   host: localhost
   port: 5432
@@ -15,11 +16,13 @@ development:
 
 test:
   <<: *default
+  adapter: postgresql
   database: postgres
   username: postgres
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %> 
 
 production:
+  adapter: postgresql
   database: postgres
   url: <%= ENV['DATABASE_URL'] %>
   pool: <%= ENV['DATABASE_POOL_SIZE'] || 10 %>
