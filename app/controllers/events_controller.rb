@@ -14,16 +14,6 @@ class EventsController < ApplicationController
   end
 
   # POST /events
-  # def create
-  #   @event = Event.new(event_params)
-  #   if event_params == true
-  #     render @event.save
-  #   elsif event_params == false
-  #     render json: {status: 'SUCCESS', message: "You have added #{event_params}."}, status: :ok
-  #   else
-  #     render json: {status: 'ERROR', message: "You are missing #{params.require[:id]}."}, status: :unprocessable_entity
-  #   end
-  # end
   def create
     @event = Event.new(event_params)
     if @event.save
@@ -32,7 +22,6 @@ class EventsController < ApplicationController
       err_message = {"Message": "Unable to create event."}
       err_message["Response"] = @event.errors
       render json: err_message, status: :unprocessable_entity
-      # render json: { error: "Unable to create Event. You are missing #{@event.errors}" }, status: :unprocessable_entity
     end
   end
 
