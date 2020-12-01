@@ -74,6 +74,30 @@ POST: rubyonrailsapi.herokuapp.com/events/
 	"button_color": "green"
 	}
 
+POST WITH ERROR VALIDATION:
+```
+	(Body, Raw, JSON)
+	Example:
+	{
+	"not name": "right button",
+	"event_type1": "click",
+	"at": "2020-07-12T00:00:03",
+	"button_color": "green"
+	}
+	
+	{
+    "Message": "Unable to create event.",
+    "Response": {
+        "name": [
+            "can't be blank"
+        ],
+        "event_type": [
+            "can't be blank"
+        ]
+    }
+}
+```
+
 UPDATE: rubyonrailsapi.herokuapp.com/events/:id
 
 DELETE:rubyonrailsapi.herokuapp.com/events/:id
