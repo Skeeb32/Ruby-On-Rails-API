@@ -41,8 +41,6 @@ POSTGRES
 ============
 Created ENV file to store password
 
-DOCUMENTATION: https://bit.ly/33zaqhF
-
 ```development:
   <<: *default
   adapter: postgresql
@@ -62,6 +60,8 @@ production:
 
 POSTMAN
 ============
+
+DOCUMENTATION: https://bit.ly/33zaqhF
 
 GET: rubyonrailsapi.herokuapp.com/events/
 
